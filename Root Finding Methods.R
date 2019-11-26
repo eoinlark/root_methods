@@ -1,11 +1,5 @@
 #########################################
-# Data Programming with C
-# Assignment 01
-# Student Number: 03437221
-#########################################
-
-#########################################
-# Clearing the R Environment ------------
+# Clearing the R Environment -------------
 #########################################
 rm(list=ls()) 
 
@@ -17,7 +11,8 @@ library(inline)
 library(rbenchmark)
 
 #########################################
-# Setting up input values ------------
+# Setting up some test data  ------------
+# Data will be used to test root methods
 #########################################
 x <- c (12.262307 , 10.281078 , 10.287090 , 12.734039 ,
          11.731881 , 8.861998 , 12.246509 , 11.244818 ,
