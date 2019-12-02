@@ -9,13 +9,13 @@ Code provides implementations for the following functions in C++ that are callab
 * Netwon-Raphson
 * Secant-Method
 
-### Bisection Algorithim
+#### Bisection Algorithim
 The algorithm takes two input values a and b. It calculates an estimated root m by taking the average of both a and b. The algorithm then calculates the first derivative of the function with respect to a and m and determines if the sign of the function changes over the interval. If the sign changes, this indicates that a local root is present and the function continues to iterate. If the sign doesn’t change, it means that the algorithm has overshot and the value of a is switched with than of b, before continuing to iterate.
 
-### Newton-Raphson
+#### Newton-Raphson
 The algorithm calculates the first and second derivative of the function for the input value x1. It then approximates the function and finds the point x2 where the function crosses zero. The algorithm contimues to iterate until the first derivate is zero or the change in the value of the points x1 and x2 is less than zero.
 
-### Secant-Method
+#### Secant-Method
 This approach is identical to the Newton-Rapson approach, however the second derivative is not explicitly required; rather this is approximated with a finite difference approximation.
 
 ## Performance
