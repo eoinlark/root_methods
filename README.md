@@ -22,6 +22,6 @@ This approach is identical to the Newton-Rapson approach, however the second der
 Benchmarking each of the functions in R, Newton's method proves to be the most efficient, at the expense of requiring an initial accurate "guess" for the root. Otherwise there is a risk that the function will fail to converge.
 
 ## Links
-[Bisection Algorithim](https://en.wikipedia.org/wiki/Bisection_method)
-[Newton-Raphson](https://en.wikipedia.org/wiki/Newton%27s_method)
-[Secant Methold](https://en.wikipedia.org/wiki/Secant_method)
+* [Bisection Algorithim](https://en.wikipedia.org/wiki/Bisection_method)
+* [Newton-Raphson](https://en.wikipedia.org/wiki/Newton%27s_method)
+* [Secant Methold](https://en.wikipedia.org/wiki/Secant_method)
