@@ -71,7 +71,7 @@ for(int j = 0; j < num_its; j++)   //iterating through the loop to solve
 }
 
 if (f2(xx, r3) < 0 ){return( wrap(r3) );} //Returning the root
-else {return(wrap("No MLE found"));}
+else {return(wrap("No root found"));}
 '
 
 bisectRcpp <- cxxfunction(signature(x = "numeric", 
@@ -107,7 +107,7 @@ for(int j = 0; j < num_its; j++)    //looping for the number of iterations
 }
 
 if (f2(xx, x1_new) < 0 ){return(wrap(x1_new));} //Returning the root
-else {return(wrap("No MLE found"));}
+else {return(wrap("No root found"));}
 '
 
 newtonRcpp <- cxxfunction(signature(x = "numeric", b = "numeric", n = "integer", tol = "numeric"),
@@ -140,7 +140,7 @@ for(int j = 0; j < num_its; j++)
 }
 
 if (f2(xx, x2) < 0 ){return( wrap(x2) );}   //Returning the root
-else {return(wrap("No MLE found"));}
+else {return(wrap("No root found"));}
 '
 
 secantRcpp <- cxxfunction(signature(x = "numeric", a = "numeric", b = "numeric", n = "integer", tol = "numeric"),
@@ -150,6 +150,8 @@ secantRcpp <- cxxfunction(signature(x = "numeric", a = "numeric", b = "numeric",
 
 #########################################
 # Testing Functions ------------
+# Testing the functions for different ranges
+# and starting values
 #########################################
 bisectRcpp(x, 9,11,1000,0.00000001)
 bisectRcpp(x, 0,30,1000,0.00000001)
